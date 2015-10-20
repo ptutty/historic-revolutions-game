@@ -12,6 +12,11 @@
 * must view via a HTTP server rather than through file system due to CORS restriction of some browsers.
 * navigate to either index.html or iframe.html 
 
+### Specification ###
+
+* designed for fixed width display 960px min
+* tested on modern browsers
+* designed to work within iFrame 
 
 
 ### Need help ###
