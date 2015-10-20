@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+   
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#/welcome/" >New Game</a></li>
+        <li ng-controller="ModalCtrl"><a href ng-click="open('lg')" >How To Play</a></li>
+        <li class="active"><a href>Your score: {{ topPanelCtrl.gameState.userScore}}</a></li>
+       <!--  <li><a href>Leaderboard</a></li> -->
+      </ul>
+     
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li ng-show="topPanelCtrl.gameState.gamebegin"><a href><strong>Level {{ topPanelCtrl.gameState.level }}</strong> </a></li>
+      <li class="active" ng-show="topPanelCtrl.gameState.gamebegin"><a href="./">{{topPanelCtrl.gameState.role}}: {{ topPanelCtrl.gameState.avatarDetails.name }}</a></li>      
+    </ul>
+   <span class="pull-right" ng-show="topPanelCtrl.gameState.gamebegin">  
+    <img class="avatar-small" ng-src="app/images/avatars/{{ topPanelCtrl.gameState.avatarDetails.img }}" width="100px" height="100px"/>
+
+       <img class="avatar-small" ng-src="app/images/ruler.jpg" ng-show="topPanelCtrl.gameState.role == 'ruler' "  width="100px" height="100px"/>
+
+       <img class="avatar-small" ng-src="app/images/revolutionary.jpg" ng-show="topPanelCtrl.gameState.role == 'revolutionary' "  width="100px" height="100px" />
+    </span>
+
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+

@@ -1,0 +1,45 @@
+<div class="factorpanel" ng-show="factorsCtrl.gameState.factorPanel && !factorsCtrl.gameState.gameover">
+
+
+<div class="factors col-xs-5 nopadding">
+	<ul class="list-group" >
+		<li class="list-group-item" ng-repeat="factor in factorsCtrl.factorsList | orderBy:'name' " ng-click="factorsCtrl.currentFactorUpdate(factor)" ng-class="{'active' : factorsCtrl.currentFactor.name == factor.name, 'disable-factor' : factor.used}">
+			<strong>{{ factor.name }}</strong>
+		</li>
+	</ul>
+</div>
+
+<div class="factor-settings col-xs-7 nopadding">
+
+<div ng-show="factorsCtrl.currentFactor.name" class="factor-setting-well">
+	<h2>{{ factorsCtrl.currentFactor.name }}</h2>
+	<img ng-src="app/images/factor-icons/{{factorsCtrl.currentFactor.images[0].icon}}" />
+	<h4 ng-show="factorsCtrl.currentFactor.used"> This factor has been added</h4>
+
+	<div ng-hide="factorsCtrl.currentFactor.used">
+
+	<div ng-show="!factorsCtrl.currentFactor.used" style="margin: 10px 10px; font-size: 18px;">
+
+	<button type="button" ng-click="factorsCtrl.currentFactorWeightUpdate(1)" class="btn btn-revolution btn-lg btn-block">{{ factorsCtrl.currentFactor.weightsetting1 }}</button>
+	<p class="text-center">or</p>
+<button type="button" ng-click="factorsCtrl.currentFactorWeightUpdate(5)"  class="btn btn-revolution btn-lg btn-block">{{ factorsCtrl.currentFactor.weightsetting5 }}</button>
+		
+
+
+		
+	</div>
+
+
+	</div>
+
+</div>
+
+<ul class="factors-fuel-group" ng-show="factorsCtrl.currentFactor.used" >
+<li ng-repeat="factor in factorsCtrl.factorsList" ng-show="factor.name == factorsCtrl.currentFactor.name">
+	<img ng-repeat="n in factorsCtrl.range(factor.weight)" ng-src="app/images/fuel-{{factorsCtrl.gameState.role}}.png" alt="" class="factors-fuel-fadeout" >
+</li>
+</ul>
+
+
+</div>
+</div>

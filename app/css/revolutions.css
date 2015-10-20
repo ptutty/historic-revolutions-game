@@ -1,0 +1,294 @@
+
+
+.completed {
+    text-decoration: line-through;
+    color: #fff;
+    background-color: #5cb85c!important;
+    border-color: #4cae4c!important;
+}
+
+
+
+/* progress bar */
+.bar-wrap {
+    position: relative;
+}
+.progress-marker {
+    width: 2px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    bottom: -5px;
+}
+.time-axis {
+    display: block;
+    float: left;
+    width: 100%;
+    /*margin: 0px 0 10px 0;*/
+}
+.time-spot {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.time-spot-end {
+    display: block;
+    float: left;
+    width: 12.5%;
+}
+
+.progress-revolution-wrap {
+    width: 705px;
+    position: absolute;
+    left: 225px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+}
+
+.progress-factors-revolution-wrap {
+    width: 290px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+}
+
+
+.progress-revolution {
+    height: 35px!important;
+    background-color: #D4CBCB!important;
+}
+
+/* modal window */
+
+.modal-footer-instructions {
+     border-top: none!important;
+}
+
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.container {
+    width: 960px;
+    max-width: none !important;
+}
+
+.result-feedback {
+    font-size: 16px;
+    margin: 10px 10px 10px 10px;
+}
+
+.btn-revolution {
+    color: #fff;
+    background-color: #d71a21;
+    border-color: #fae4a8;
+    width: 100%;
+    white-space: normal!important;
+}
+
+.btn-revolution:hover {
+    color: #fff;
+    background-color: green;
+
+}
+
+.btn-startup {display: inherit;}
+
+/* naviagation */
+
+.navbar img.avatar-small {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar img {
+    vertical-align: top;
+}
+.navbar a {
+
+}
+
+
+.feedback-message {
+    margin: 40px;
+}
+
+/* factors panel */
+
+.factor-setting-well {
+  background-color: rgba(51, 122, 183, 0.9);
+  padding: 5px 10px;
+}
+
+.factor-feedback-well {
+  background-color: rgba(51, 122, 183, 0.9);
+  padding: 5px 10px;
+}
+
+.factor-feedback-well p {
+    color: black;
+}
+
+
+.factor-setting-well p, .factor-setting-well label , .factor-setting-well h2 , .factor-setting-well h4 {
+  color: white;
+  font-weight: 500;
+}
+
+.disable-factor {
+    background-color: #DCD4D4!important;
+}
+
+
+.factor-setting-well li {
+  color: black;
+}
+
+.factors li {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-weight: 600;
+} 
+
+.list-group-item.active { background-color: rgba(51, 122, 183, 0.9)!important;  border-color: rgba(51, 122, 183, 0.9);}
+
+
+ul.factors-fuel-group  {
+    margin-top: 40px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.factors-fuel-fadeout {
+    margin-top: 40px;
+    animation:factors-fuel-fadeout 0.3s 1;
+    -webkit-animation:factors-fuel-fadeout 0.3s 1;
+    animation-fill-mode: forwards;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards; 
+} 
+
+@-webkit-keyframes factors-fuel-fadeout {
+    0%   {opacity: 1;}
+    70%  {opacity: 1;}
+    90% {opacity: 1;-webkit-transform: translateY(0px);}
+    100% {opacity: 0;-webkit-transform: translateY(-30px);}
+}
+
+
+
+.start-game {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	text-transform: uppercase;
+}
+
+/* avatars */
+
+.avatar-description {
+	background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 60px;
+    margin: 40px 30px;
+}
+
+
+
+.avatar-description img {
+	margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+#bonfire {
+      margin-top: 100px;
+}
+
+/* backgrounds */
+
+.bkgrd {
+    position:relative;
+}
+
+
+.bkgrd-start {
+	background-image: url(../images/openingscreen.jpg);
+    height: 600px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-color: #d71a21;
+}
+
+
+.bkgrd-1 {
+	background-image: url(../images/backgrounds/russian-revolution.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+.bkgrd-2 {
+	background-image: url(../images/backgrounds/china.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+.bkgrd-3 {
+	background-image: url(../images/backgrounds/mexico.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+.bkgrd-4 {
+	background-image: url(../images/backgrounds/english.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+.bkgrd-5 {
+	background-image: url(../images/backgrounds/rome.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+.bkgrd-6 {
+	background-image: url(../images/backgrounds/paris-revolution.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+.end-bkgrd-1 { /* revolution success */
+   background-image: url(../images/endscreens/revolution-1.jpg);
+   height: 600px;
+margin-top: 70px;
+}
+
+.end-bkgrd-2 {
+    background-image: url(../images/endscreens/failed-to-spark.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+.end-bkgrd-3 {
+    background-image: url(../images/endscreens/you-crushed.jpg);
+   height: 600px;
+    margin-top: 70px;
+}
+
+.end-bkgrd-4 {
+    background-image: url(../images/endscreens/failed-to-prevent-revolution.jpg);
+    height: 600px;
+    margin-top: 70px;
+}
+
+
+
+

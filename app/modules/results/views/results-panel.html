@@ -1,0 +1,96 @@
+
+
+<div id="game-canvas" ng-class="resultsCtrl.bkgrdImg">
+ 
+
+
+<!-- successful revolutionary -->
+<div class="factor-setting-well result-feedback col-xs-12 " ng-show="resultsCtrl.resultType == 1" >
+
+	<p>Congratulations – you have overthrown the old order and established a revolutionary government. Move into the old imperial palace while you consider how best to redistribute the property of the ruling classes to the suffering masses.</p>
+ 
+<p>But take care. Leading a successful revolution is the easy part. Holding on to power without descending into terror is harder to do. Are you certain your colorless second-in-command is ideologically sound? Have him interrogated by your secret police before playing again.</p>
+</div>
+
+<!-- failed revolutionary -->
+<div class="factor-setting-well col-xs-12 result-feedback" ng-show="resultsCtrl.resultType == 2">
+	
+<p>You have failed to spark a revolution. Betrayed by stool pigeons working for the secret police, your bomb factory has been uncovered and your follows dispersed. Pursued through the slums by the forces of repression, you are cornered in a safe house and shot to pieces by the national guard.</p>
+ 
+<p>But never fear. The ideals you stood for will live on, and fresh generations of revolutionaries will rise up to play again.</p>
+
+</div>
+
+<!-- sucessful ruler-->
+<div class="factor-setting-well col-xs-12 result-feedback" ng-show="resultsCtrl.resultType == 3">
+<p>Congratulations – you have crushed the forces of radicalism and anarchy, and silenced the voices of the undeserving poor. Your regime remains in power and, secure at last at home, you are free to pursue imperial conquests and build an empire worthy of the name.</p>
+ 
+<p>But take care. Your martyrdom of the young revolutionary leaders may yet provoke counterstrikes against you. Have your men check your carriage for bombs before you dare to play again.</p>
+	
+</div>
+
+<!-- failed ruler -->
+<div class="factor-setting-well col-xs-12 result-feedback" ng-show="resultsCtrl.resultType == 4">
+	<p>You have failed to prevent revolution breaking out. Your authority as ruler has collapsed, and all your followers desert you. Captured while attempting to escape disguised as a chimney sweep, you will be taken out and shot at dawn.</p>
+ 
+	<p>Scant consolation though it is to you, your eldest son survives to continue your dynasty and play again.
+</p>
+
+
+</div>
+
+<div class="col-xs-6 ">
+
+<div class="factor-feedback-well">
+	<p>These are the <strong>worst</strong> scoring factors you chose.</p>
+<ul class="list-group" >
+	<li class="list-group-item" ng-repeat="factor in resultsCtrl.gameState.factors | orderBy:'score' | limitTo:4 ">
+		<strong>{{ factor.name }} <span class="badge pull-right" style="background-color: red">{{$index + 1}}</span></strong>
+		<p ng-show="resultsCtrl.gameState.role == 'revolutionary' ">{{factor.weightsetting1}}</p>
+		<p ng-show="resultsCtrl.gameState.role == 'ruler' ">{{factor.weightsetting5}}</p>
+	</li>
+</ul>
+</div>
+
+</div>
+
+<div class="col-xs-6 ">
+
+<div class="factor-feedback-well">
+	<p>These are the <strong>best</strong> scoring factors you chose.</p>
+<ul class="list-group" >
+	<li class="list-group-item" ng-repeat="factor in resultsCtrl.gameState.factors | orderBy:'score':true | limitTo:4 ">
+		<strong>{{ factor.name }} <span class="badge pull-right" style="background-color: green">{{$index + 1}}</span> </strong>
+		<p ng-show="resultsCtrl.gameState.role == 'revolutionary' ">{{factor.weightsetting5}}</p>
+		<p ng-show="resultsCtrl.gameState.role == 'ruler' ">{{factor.weightsetting1}}</p>
+	</li>
+</ul>
+</div>
+
+</div>
+
+<div class="col-xs-12">
+
+{{resultsCtrl.nextlevel}}
+<div ng-switch on="resultsCtrl.completed">
+
+ <div ng-switch-when="1">
+ 	<a class="btn btn-revolution btn-lg text-center btn-startup" ng-href="#/level/{{resultsCtrl.gameState.level}}">Bad luck try again.
+</a>
+ </div>
+
+ <div ng-switch-when="2">
+<a class="btn btn-revolution btn-lg text-center btn-startup" ng-href="#/level/{{resultsCtrl.nextlevel}}">Well done, try the next level 
+</a>
+
+ </div>
+
+ <div ng-switch-when="3">
+ 	<a class="btn btn-revolution btn-lg text-center btn-startup" href="#/welcome">Well done you have completed the game! Play the game again</a>
+ </div>
+
+
+
+
+</div>
+

@@ -1,0 +1,44 @@
+[{
+ 	"id": 1,
+ 	"name": "Vladimir Lenin",
+ 	"era": "1870 - 1924",
+ 	"text": "In 1917, exhausted by World War One, Russia was ripe for change. Assisted by the Germans, who hoped that he would undermine the Russian war effort, Lenin returned home and started working against the provisional government that had overthrown the tsarist regime. He eventually led what was soon to be known as the October Revolution, but was effectively a coup d'etat. Almost three years of civil war followed. The Bolsheviks were victorious and assumed total control of the country. During this period of revolution, war and famine, Lenin demonstrated a chilling disregard for the sufferings of his fellow countrymen and mercilessly crushed any opposition.",
+ 	"img": "lenin.jpg"
+ 	},
+ 	{
+ 	"id": 2,
+ 	"name": "Deng Xiaoping",
+ 	"era": "1904 – 1997",
+ 	"text": "Deng Xiaoping was one of the old revolutionary fighters and a survivor of the legendary Long March. Having long been among the top leaders and an ally of Zhou Enlai, he still had a lot of respect in the Party. In 1977 he returned to the upper ranks of the Party, and by late 1978, as Hua Guofeng was fading politically, Deng became the Party's paramount leader while holding the relatively modest post of Vice Premier.",
+ 	"img": "xiaoping.jpg"
+ 	},
+ 	{
+ 	"id": 3,
+ 	"name": "Emiliano Zapata",
+ 	"era": "1887 – 1919",
+ 	"text": "Emiliano Zapata Salazar was a leading figure in the Mexican Revolution, the main leader of the peasant revolution in the state of Morelos, and the inspiration of the agrarian movement called Zapatismo.",
+ 	"img": "zapata.jpg"
+ 	},
+ 	{ 
+ 	"id": 4,
+ 	"name": "Charles I of England",
+ 	"era": "1600 – 1649",
+ 	"text": "Charles I was King of England, King of Scotland, and King of Ireland from 27 March 1625 until his execution in 1649..",
+ 	"img": "charles.jpg"
+ 	},
+ 	{
+ 	"id": 5,
+ 	"name": "Spartacus",
+ 	"era": "111BC – 71BC",
+ 	"text": "Spartacus was a Thracian gladiator who, along with the Gauls Crixus, Oenomaus, Castus and Gannicus, was one of the escaped slave leaders in the Third Servile War, a major slave uprising against the Roman Republic.",
+ 	"img": "spartacus.jpg"
+ 	},	
+ 	{
+ 	"id": 6,
+ 	"name": "Louis XVI of France",
+ 	"era": "1754 – 1793",
+ 	"text": "Louis XVI, also known as Louis Capet, was King of France from 1774 until his deposition in 1792, although his formal title after 1791 was King of the French. He was executed on the 21st of January 1793.",
+ 	"img": "louis.jpg"
+ 	}
+
+] 

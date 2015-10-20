@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="revolutions">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="app/css/revolutions.css">
+</head>
+
+
+<body ng-view > 
+
+<!-- for persisting data in leaderboard-->
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+<!-- angularJS -->
+<script type="text/javascript" src="lib/angular/angular.js"></script>
+<script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+ 
+
+<!-- app / routes /  services -->
+<script type="text/javascript" src="app/scripts/app.js"></script>
+<script type="text/javascript" src="app/scripts/routes.js"></script>
+<script type="text/javascript" src="app/scripts/service.js"></script>
+<!-- directives and controllers-->
+<script type="text/javascript" src="app/modules/factors/directive.js"></script>
+<script type="text/javascript" src="app/modules/topnav/directive.js"></script>
+<script type="text/javascript" src="app/modules/stage/directive.js"></script>
+<script type="text/javascript" src="app/modules/results/directive.js"></script>
+<script type="text/javascript" src="app/modules/avatars/controller.js"></script>
+<script type="text/javascript" src="app/modules/startup/controller.js"></script>
+<!-- ui bootstrap -->
+<script type="text/javascript" src="app/modules/ui-bootstrap/ui-bootstrap-modal-controller.js"></script>
+<script type="text/javascript" src="app/modules/ui-bootstrap/ui-bootstrap-progress-controller.js"></script>
+
+<!-- helpers -->
+<script type="text/javascript" src="app/scripts/helper.js"></script>
+
+</body>
+</html>

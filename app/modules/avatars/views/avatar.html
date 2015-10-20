@@ -1,0 +1,38 @@
+
+<div class="container">
+
+<div ng-class="bkgrd" class="bkgrd">	
+
+<div class="well avatar-description row">
+
+
+<div class="col-xs-5">
+	
+<img class="pull-left" ng-src="app/images/avatars/{{ gameState.avatarDetails.img }}"/>
+   <a class="btn btn-revolution btn-lg " ng-href="#/level/{{gameState.level}}/role/{{gameState.role}}/play" ng-show="gameState.role == 'revolutionary' ">
+		Try and start a revolution<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	</a>
+
+	<a ng-show="gameState.role == 'ruler' " class="btn btn-revolution btn-lg " ng-href="#/level/{{gameState.level}}/role/{{gameState.role}}/play" >
+		Try and crush the impending revolution<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	</a>
+</div>
+
+<div class="col-xs-7">
+	<h2>Your have choosen to be a {{ gameState.role }}</h2>
+	<h3>{{ gameState.avatarDetails.name }}</h3>	
+	<p>{{ gameState.avatarDetails.text }}</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+ 

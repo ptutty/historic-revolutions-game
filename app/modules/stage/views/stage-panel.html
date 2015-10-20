@@ -1,0 +1,55 @@
+
+
+<div ng-class="setBkgrd()" class="gamecanvas bkgrd">
+
+<!-- <button ng-click="stageCtrl.testButton()"></button> -->
+
+<div class="col-xs-7 nopadding">
+	<factors-panel></factors-panel>	
+    
+	<div class="factor-setting-well feedback-message" ng-show="stageCtrl.gameState.gameover">
+	<h2>{{ stageCtrl.finalMessage }}</h2>
+	 <a class="btn btn-success btn-lg" ng-href="#/level/{{stageCtrl.gameState.level}}/role/{{stageCtrl.gameState.role}}/results">View your score and feedback</a>
+    </div> 
+
+</div>
+
+<div class="col-xs-5">
+<img id="bonfire" ng-src="app/images/bonfire/{{ stageCtrl.fireIncrement }}" alt="">
+</div>
+
+<div ng-controller="ProgressCtrl" class="progress-revolution-wrap"> 
+<h4 ng-show="stageCtrl.gameState.role == 'revolutionary' ">Start a Revolution!</h4>
+<h4 ng-show="stageCtrl.gameState.role == 'ruler' ">A Revolution is imminent - put it down</h4>
+
+        <div class="bar-wrap">
+            <progressbar type="{{type}}" max="gameState.tippingPoint" class="progress-striped progress-revolution active no-extra-space" value="score" > </progressbar>
+            <div style="right:25%" class="progress-marker"></div>
+            <div style="right:50%" class="progress-marker"></div>
+            <div style="right:75%" class="progress-marker"></div>
+        </div>
+
+        <div class="time-axis">
+            <div class="time-spot-end">Revolution put down</div>
+            <div class="time-spot text-center">25%</div>
+            <div class="time-spot text-center">50%</div>
+            <div class="time-spot text-center">75%</div>
+            <div class="time-spot-end text-right">Revolution breaks out</div>
+        </div>
+
+</div>
+
+<div ng-controller="ProgressCtrl" class="progress-factors-revolution-wrap"> 
+<h4>Unused factors: {{ factorsRemaining}}</h4>
+  <progressbar max="gameState.numFactors" class="progress-striped progress-revolution" value="factorsRemaining" > 
+  </progressbar> 
+
+ <p> {{message}}</p>
+</div>
+
+
+
+</div>	
+
+
+

@@ -1,0 +1,180 @@
+[{			"name": "Ruler",
+			"IR": 5,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Beloved",
+			"weightsetting5": "Feared",
+			"used": false,
+			"images": [
+			{"icon": "ruler.jpg"}
+					]
+	},
+	{
+			"name": "Army",
+			"IR": 5,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Disciplined and ruthless",
+			"weightsetting5": "Undisciplined, low morale",
+			"used": false,
+			"images": [
+			{"icon": "army.jpg"}
+					]
+	},
+	{
+			"name": "Political opposition",
+			"IR": 5,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "No common cause, & varying degrees of discontent",
+			"weightsetting5": "Professional revolutionary groups",
+			"used": false,
+			"images": [
+			{"icon": "army.jpg"}
+					]
+	},
+	{
+			"name": "Elites",
+			"IR": 4,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Defending old privileges",
+			"weightsetting5": "Seeking new opportunities",
+			"used": false,
+			"images": [
+			{"icon": "political-elites.jpg"}
+					]
+	},
+	{
+			"name": "Working classes",
+			"IR": 4,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Poorly organised",
+			"weightsetting5": "United and discontented",
+			"used": false,
+			"images": [
+			{"icon": "working classes.jpg"}
+					]
+	}	,
+	{
+			"name": "Religion",
+			"IR": 4,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Socially influential state faith",
+			"weightsetting5": "Radicalised in support of the poor",
+			"used": false,
+			"images": [
+			{"icon": "religion.jpg"}
+					]
+	},
+	{
+			"name": "Foreign affairs",
+			"IR": 3,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Victory and expansion abroad",
+			"weightsetting5": "Defeat and occupation by enemy forces",
+			"used": false,
+			"images": [
+			{"icon": "foriegn-affairs.jpg"}
+					]
+	},
+	{
+			"name": "Middle classes",
+			"IR": 3,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Growing in wealth",
+			"weightsetting5": "Increasingly burdened by taxes and administration",
+			"used": false,
+			"images": [
+			{"icon": "middle-classes.jpg"}
+					]
+	},
+	{
+			"name": "Peasantry",
+			"IR": 3,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Prosperous and engaged",
+			"weightsetting5": "Starved and illiterate",
+			"used": false,
+			"images": [
+			{"icon": "peasantry.jpg"}
+					]
+	},
+	{
+			"name": "Public opinion",
+			"IR": 3,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Censored and firmly under state control",
+			"weightsetting5": "Vigorous and free, with mass communications",
+			"used": false,
+			"images": [
+			{"icon": "public-opinion.jpg"}
+					]
+	},
+	{
+			"name": "Mobility",
+			"IR": 3,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "There is more social mobility than geographical mobility",
+			"weightsetting5": "More  geographical mobility than social mobility",
+			"used": false,
+			"images": [
+			{"icon": "mobillity.jpg"}
+					]
+	},
+	{
+			"name": "Type of government",
+			"IR": 3,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Authoritarian",
+			"weightsetting5": "Democratic",
+			"used": false,
+			"images": [
+			{"icon": "type-of-govenment.jpg"}
+					]
+	},
+	{
+			"name": "Nation’s past",
+			"IR": 2,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Long history of authoritarian regimes",
+			"weightsetting5": "Recent instances of revolution",
+			"used": false,
+			"images": [
+			{"icon": "nations-past.jpg"}
+					]
+	},
+	{
+			"name": "Justice",
+			"IR": 1,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "The law is a weapon of the elites",
+			"weightsetting5": "The law serves popular justice",
+			"used": false,
+			"images": [
+			{"icon": "justice.jpg"}
+					]
+	},
+	{
+			"name": "Communications",
+			"IR": 1,
+			"weight": 0,
+			"score": 0,
+			"weightsetting1": "Poor infrastructure - news travels slowly",
+			"weightsetting5": "Good infrastructure - news travels fast",
+			"used": false,
+			"images": [
+			{"icon": "communication.jpg"}
+					]
+	}																																	
+]

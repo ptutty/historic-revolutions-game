@@ -1,0 +1,31 @@
+
+<div class="container">
+
+<div class="bkgrd-start">
+
+<div class="well avatar-description row" >
+
+  <h3>As the level of difficulty increases you will have less factors to choose from to influence the revolution. You'll also be assigned a different avatar and historical scenario.</h3>
+
+   <div class="col-xs-4" > 
+   <a class="btn btn-revolution btn-lg text-center btn-startup" ng-class="{completed: gameState.level > 1, disabled: gameState.level > 1 }" href="#/level/1/role">Level 1 
+    <span ng-show="gameState.levelNum > 1" class="glyphicon glyphicon-ok"></span> 
+    <span ng-show="gameState.levelNum == 1" class="glyphicon glyphicon-chevron-right"></span> 
+    </a>
+   </div>
+
+   <div class="col-xs-4" > 
+   <a class="btn btn-revolution btn-lg text-center btn-startup"  ng-class="{disabled: gameState.level == 1 || gameState.level == 3 , completed: gameState.level > 2 }" href="#/level/2/role">Level 2
+    <span ng-show="gameState.levelNum > 2 " class="glyphicon glyphicon-ok"></span>
+    <span ng-show="gameState.levelNum == 2" class="glyphicon glyphicon-chevron-right"></span> 
+   </a>
+   </div>
+   <div class="col-xs-4" > 
+    <a class="btn btn-revolution btn-lg text-center btn-startup" ng-class="{disabled: gameState.level < 3, completed: gameState.level > 3 }" href="#/level/3/role">Level 3
+      <span ng-show="gameState.levelNum > 3" class="glyphicon glyphicon-ok"></span>
+      <span ng-show="gameState.levelNum == 3" class="glyphicon glyphicon-chevron-right"></span> 
+    </a>
+   </div>
+</div>
+
+</div>
