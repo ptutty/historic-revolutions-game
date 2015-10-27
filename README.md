@@ -1,7 +1,7 @@
 # Revolution tipping point game #
 
 
-### Interactive education game built with AngularJS and HTML5 ###
+### Interactive Educational game built with AngularJS and HTML5 ###
 
 * Version 1.2
 
@@ -16,10 +16,10 @@
 
 * designed for fixed width display 960px min
 * tested on modern browsers
-* designed to work within iFrame 
+* can work within an iFrame 
 
 
-### Need help ###
+### contact ###
 
 * Philip Tutty, IGGY, University of Warwick
 * p.tutty@wawick.ac.uk
